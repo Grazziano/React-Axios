@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import Conecta from './Conecta'
 import ItemLista from './ItemLista'
 
+import './Listagem.css'
+
 export default class Listagem extends Component{
 
   state = {
