@@ -14,8 +14,15 @@ export default class Listagem extends Component{
 
   render(){
     return(
-      <div>
-
+      <div className="container mt-2">
+        <div className="card-deck">
+        {this.state.ofertas.map(oferta => (
+          <ItemLista key={oferta.produto}
+                      produto={oferta.produto}
+                      marca={oferta.marca}
+                      foto={oferta.foto} />
+        ))}
+        </div>
       </div>
     )
   }
