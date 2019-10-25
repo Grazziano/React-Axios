@@ -21,6 +21,7 @@ export default class Listagem extends Component{
           <ItemLista key={oferta.produto}
                       produto={oferta.produto}
                       marca={oferta.marca}
+                      preco={oferta.preco}
                       foto={oferta.foto} />
         ))}
         </div>
